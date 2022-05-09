@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* se cambia el modelo de la pagina */
+    box-sizing: border-box;
+}
+html{
+    background-image: url(/web2/imagenes/norway-4970080__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1100px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*se adapta a cualquier tamaño de patalla */
+    font-size: 1.5em;
+    /* ocupa toda la pantalla*/
+    min-height: 100%;
+}
+body>*{
+    box-shadow:-1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    display: grid; 
+    /* proporciona una cuadrícula de una sola columna */
+    gap:10px; /*Separación de los elementos */
+}
+body{
+    /*definir las areas para un mismo diseño*/
+    grid-template-areas: 
+    "header" 
+    "nav" 
+    "article"
+    "aside"  
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(255, 163, 127);
+}
+.nav{
+    grid-area: nav;
+    background-color: rgb(138, 255, 127);
+}
+.article{
+    grid-area: article;
+    background-color: gold;
+}
+.aside{
+    grid-area: aside;
+    background-color: rgb(129, 127, 255);
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(57, 165, 129);
+}
+img:hover{
+    /*filter: blur(5px);EFECTO DESENFOQUE */
+    /*filter: grayscale(80%);*/
+    /*filter: sepia(60%);*/
+    /*filter: saturate(180%);*/
+    filter: opacity(.5);
+}
+/*seudocodigos es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento selecionado*/
+/*tamaño tablet*/
+@media (min-width:600px){
+    body{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "article aside"
+        "footer footer"
+        ;
+    }
+}
+/*TAMAÑO ESCRITORIO*/
+@media (min-width:900px){
+    body{
+        grid-template: 
+        "header header header" 100px
+        "nav article aside"
+        auto
+        "footer footer footer" 100px /
+        200px auto 200px
+        ;
+    }
+}

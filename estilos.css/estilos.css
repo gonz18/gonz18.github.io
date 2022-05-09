@@ -1,0 +1,95 @@
+
+*{
+    margin: 0 10px 10px 10px;
+}
+
+body{
+    background-color: rgba(233, 230, 213, 0.733);
+}
+
+.menu{
+    background-color: aquamarine;
+    background-image: url();
+    text-align: right;
+    margin: 2px;
+    width: 1300px;
+    height: 180px;
+    font-size: 1.3rem;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    float: left;
+}
+
+.menu p{
+    font-size: 1.3rem;
+    margin: 2px;
+    text-align: left;
+    
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px;
+}
+.menu h2{
+    margin: 2px;
+    text-align: left;
+}
+
+.menu a{
+    padding: 30px;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    display: block;
+}
+.menu a:hover{
+    background-color: rgb(80, 200, 255);
+    font-size: large;
+}
+aside{
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 810px;
+    height: 585px;
+    text-align: center;
+    margin: 2px;
+    float: left;
+}
+
+p{
+    margin-bottom: 1.6em;
+    font-size: 1.05rem;
+    text-align: justify
+}
+
+
+nav{
+    width: 350px;
+    height: 500px;
+    background-color: #c92f2a;
+    padding: 2%;
+    text-align: center;
+    text-align: left; 
+    margin: 1px;
+    float: right;
+}
+.salto{
+    background-color: rgba(233, 230, 213, 0.733)
+}
+
+.pie{
+    background-color: rgba(142, 214, 172, 0.589);  
+    color: rgb(15, 14, 14); 
+    width: 100%; 
+    height: 15%; 
+    text-align: center; 
+    clear: both;
+}
+
+
+
+
+
+
