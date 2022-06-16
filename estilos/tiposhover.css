@@ -1,0 +1,86 @@
+.cuadrado{
+    position: relative;
+}
+.caja{
+    width: 180px;
+    height: 180px;
+    background-color: aqua;
+    color: rgb(12, 10, 10);
+    text-align: center;
+    line-height: 180px ;
+    margin: 15px; /*separa los bordes*/
+    float: left;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuauno{
+    background-color: gold;
+    /*-webkit-transition: background-color 1s linear;
+    transition: background-color 1s linear;*/
+    transition-duration: 5s;
+    transition-delay: linear;
+}
+.cuauno:hover{
+    background-color: white;
+}
+
+.cuados{
+    background-color: aqua;
+    transition-property: font-size ;
+    transition-duration: 5s;
+    transition-delay: ease; /*lento-rapido-lento*/
+}
+.cuados:hover{
+    font-size: 20px;
+}
+
+.cuatres{
+    background-color: rgb(4, 165, 111);
+    transition-property: color;
+    transition-property: 5s;
+    transition-delay: ease-in; /*lento-normal-normal*/
+}
+.cuatres:hover{
+    color: gold;
+}
+.cuatro{
+    background-color: violet;
+    transition-property: line-heigth;
+    transition-duration: 5s;
+    transition-delay: ease-out;/*normal-normal-lento*/
+
+}
+.cuatro:hover{
+    line-height: 250px;
+}
+
+.cuacinco{
+    background-color: tomato;
+    /*lento-normal-lento*/
+    transition: border-radius 5s ease-in-out 
+}
+
+.cuacinco:hover{
+    border-radius: 20px;
+}
+
+.cuaseis{
+    background-color: gold;
+}
+
+.cuaciete{
+    background-color: aqua;
+}
+
+.cuaocho{
+    background-color: aquamarine;
+}
+
+.cuanueve{
+    background-color: violet;
+}
+
+.cuadiez{
+    background-color: tomato;
+}
