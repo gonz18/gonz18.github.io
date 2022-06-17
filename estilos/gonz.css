@@ -1,0 +1,209 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.cab{
+    width: 1400px;
+    height: 180px;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(12, 10, 10);
+    text-align: right;
+    line-height: 185px ;
+    margin: 3px 10px 0 10px; /*separa los bordes*/
+    float: none;
+    font-size: 3px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Water Brush', cursive;
+}
+
+
+
+.inicio{
+    padding: 62px 40px 65px 40px;
+    background-color: rgba(255, 217, 0, 0);
+    transition-property: color;
+    transition-property: 3s;
+    transition-delay: ease-in; /*lento-normal-normal*/
+}
+
+.inicio:hover{
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.ejer{
+    padding: 62px 40px 65px 40px;
+    background-color: rgba(255, 217, 0, 0);
+    transition-property: color;
+    transition-property: 3s;
+    transition-delay: ease-in; /*lento-normal-normal*/
+}
+.ejer:hover{
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.prac{
+    padding: 62px 40px 65px 40px;
+    background-color: rgba(255, 217, 0, 0);
+    transition-property: color;
+    transition-property: 3s;
+    transition-delay: ease-in; /*lento-normal-normal*/
+}
+.prac:hover{
+    background-color: rgba(0, 0, 0, 0.233);
+
+}
+a{
+    color: black;
+    margin: 30px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 130px;
+    margin: 0%;
+    background-color: #f7797d;
+}
+
+.conte{
+    width: 1300px;
+    background-color: #1a683900;
+    margin: 50px;
+}
+.titulo{
+    align-items: center;
+    width: 500px;
+    display: inline-block;
+    position: relative;
+text-align: center;
+    margin: 10px 60px 10px 400px;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Water Brush', cursive;
+    color: #000000;
+}
+
+.titulo::after,.titulo::before{
+    content:'';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color:currentColor;
+    top: 0.7em;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+
+.titulo:hover::before,.titulo:hover::after{
+transform: scale(1);
+}
+
+.titulo::before{
+    left: 30px;
+}
+
+.titulo::after{
+    right: -111spx;
+}
+
+.hist{
+    padding: 5px 0px 2px 0px;
+    margin: 0px 6px 100px 6px;
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Water Brush', cursive;
+}
+
+.defi{
+    float: left;
+    margin: 20px 20px 20px 20px;
+    padding: 5px 0px 10px 2px;
+    text-align: justify;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Water Brush', cursive;
+}
+
+.creador{
+    margin: 20px 450px 20px 20px;
+    padding: 5px 0px 150px 2px;
+    text-align: justify;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Water Brush', cursive;
+}
+
+.crea{
+    width: 400px;
+    height: 400px;
+    float: right;
+}
+
+
+
+.logo{
+    background: rgba(253, 253, 253, 0);
+    padding: 20px;
+    height: 30vh;
+    float: right;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+.fondo{
+    background-repeat: no-repeat;
+    float: right;
+    width: 450px;
+    height: 130px;
+    padding: 62px 40px 65px 40px;
+    background-image: url(/imagenes/una-taza-de-javascript.jpg);
+}
+
+.pie{
+    color: rgb(15, 14, 14); 
+    width: 1403px; 
+    height: 220px; 
+    text-align: left; 
+    clear: both;
+    font-size: large;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Water Brush', cursive;
+}
+
+.pie div {
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+}
+
+.icono{
+    width: 2px;
+    height: 2px;
+}
+
+.face{
+    width: 50px;
+    height: 50px;
+    right: 400px;
+}
+
+.ins{
+    width: 50px;
+    height: 50px;
+    right: 320px;
+}
