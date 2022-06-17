@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cab{
+    width: 1400px;
+    height: 180px;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(12, 10, 10);
+    text-align: right;
+    line-height: 185px ;
+    margin: 3px 10px 0 10px; /*separa los bordes*/
+    float: none;
+    font-size: 3px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Water Brush', cursive;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Water Brush', cursive;
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 1350px;
+    background-color: #f7797d00;
+    margin: 10px;
+    padding: 25px;
+}
+
+.titulo::after,.titulo::before{
+    content:'';
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background-color:currentColor;
+    top: 1.5em;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+
+.titulo:hover::before,.titulo:hover::after{
+transform: scale(1);
+}
+
+.titulo::before{
+right: 420px;
+}
+
+.titulo::after{
+left: 420px;
+}
+
+.inicio{
+    padding: 62px 40px 65px 40px;
+    background-color: rgba(255, 217, 0, 0);
+    transition-property: color;
+    transition-property: 3s;
+    transition-delay: ease-in; /*lento-normal-normal*/
+}
+
+.inicio:hover{
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.ejer{
+    padding: 62px 40px 65px 40px;
+    background-color: rgba(255, 217, 0, 0);
+    transition-property: color;
+    transition-property: 3s;
+    transition-delay: ease-in; /*lento-normal-normal*/
+}
+.ejer:hover{
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.prac{
+    padding: 62px 40px 65px 40px;
+    background-color: rgba(255, 217, 0, 0);
+    transition-property: color;
+    transition-property: 3s;
+    transition-delay: ease-in; /*lento-normal-normal*/
+}
+.prac:hover{
+    background-color: rgba(0, 0, 0, 0.233);
+
+}
+a{
+    color: black;
+    margin: 30px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 130px;
+    margin: 0%;
+    
+}
+.contenedor{
+    height: 100vh;
+    display: flex;
+    /*los divs internos esten centrados*/
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    /* */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0;
+}
+
+.one{
+    min-width: 300px;
+    max-width: 300px;
+    height: 500px;
+    outline: 2px solid black;
+    cursor:pointer ;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+img:hover{
+    transform: scale(1.2);
+}
